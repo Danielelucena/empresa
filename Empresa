@@ -1,0 +1,40 @@
+-- 1) Selecione o nome e siglas da tabela departamento
+-- select nome_depto,sigla_depto from departamento;
+
+-- 2) Selecione sigla e nome dos departamentos de forma não repetida;
+-- select distinct sigla_depto, nome_depto from departamento;
+
+-- 3) Selecione os nomes dos funcionarios
+-- select nome_funcionario from funcionario;
+
+-- 4) Selecione todos os nomes diferentes dos funcionarios
+-- select distinct nome_funcionario from funcionario;
+
+-- 5) Selecione todos os projetos diferentes e seus nomes
+-- select distinct nome_projeto, sigla_projeto from projeto;
+
+-- 6) Selecione todos os departamentos com um número menor do que 11 funcionários.
+-- select nome_depto from departamento where qtdfuncionariosdepto < '11';
+
+-- 7) Selecione todos os departamentos com um número maior ou igual a 15 funcionários
+-- select nome_depto from departamento where qtdfuncionariosdepto >= '15';
+
+-- 8)Selecione todos os funcionários de um departamento específico (no nosso caso será TI).
+-- select nome_funcionario from funcionario where sigla_depto = "IT";
+
+-- 9) Selecione todos os funcionários com seus respectivos cargos em ordem alfabética descendente
+-- select nome_funcionario, cargo from funcionario order by cargo desc;
+
+-- 10) Selecione todos os nomes dos departamentos com suas respectivas siglas em ordem alfabética ascendente
+-- select nome_depto,  sigla_depto from departamento order by nome_depto asc;
+
+-- 11) Selecione todos os projetos em ordem alfabética descendente com base em seus nomes.
+-- select nome_projeto from projeto order by nome_projeto desc;
+
+-- 12) Considere que a tabela funcionário precisa ser alterada, será necessário adicionar a coluna data_admissao (tipo date), salario (tipo decimal com até duas casas de precisão)
+alter table funcionario add collumn data_admissao date, add column salario decimal(12, 2);
+
+-- 13) 
+select * from funcionario; update funcionario set data_adimissao = "2022-02-15", salario = 5478.15
+
+
