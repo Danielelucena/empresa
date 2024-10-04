@@ -34,7 +34,9 @@
 -- 12) Considere que a tabela funcionário precisa ser alterada, será necessário adicionar a coluna data_admissao (tipo date), salario (tipo decimal com até duas casas de precisão)
 alter table funcionario add collumn data_admissao date, add column salario decimal(12, 2);
 
--- 13) 
-select * from funcionario; update funcionario set data_adimissao = "2022-02-15", salario = 5478.15
+-- 13) Considere que a tabela projeto também precisa ser alterada, será necessário adicionar a coluna duração (tipo numérico) deve representar em meses a duração de um projeto.
+-- alter table projeto add column duracao numeric;
 
+-- 14) Para garantir a consistência dos dados você deve fazer os inserts (de data de admissão e salário) nas duplas já existentes.
+-- select* from funcionario add column;
 
